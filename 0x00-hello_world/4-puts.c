@@ -1,11 +1,12 @@
 #include<stdio.h>
 
-/*
-* My Main
-*Return: 0 (the code end with zero is correct)
-*/     
-int main (void)
+/**
+ * my main
+ *
+ * return: 0
+ */
+int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
