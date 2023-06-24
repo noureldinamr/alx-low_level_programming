@@ -1,23 +1,22 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_most_numbers - entry point
- *
- * Description: Prints the numbers with _putchar
- *
- * Return: void
- */
+*print_most_numbers - prints
+* owned by Bwave ICT
+*Return: void
+*/
 
 void print_most_numbers(void)
 {
-	int number;
+	char c;
 
-	for (number = '0'; number <= '9'; number++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		if (number == '2' || number == '4')
-			;
-		else
-			_putchar(number);
+		if (!(c == '2' || c == '4'))
+		{
+		putchar(c);
+		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
