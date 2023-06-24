@@ -1,28 +1,23 @@
- #include "main.h"
+#include "main.h"
+#include <stdio.h>
 
 /**
- * more_numbers - entry point
- *
- * Description: Prints the numbers with _putchar
- *
- * Return: void
+ * more_numbers - nmbr fct
+ * Bwave ICT file
+ * Return: no return
  */
 
 void more_numbers(void)
 {
-	int number, tens, units, row;
-
-	for (row = 1; row <= 10; row++)
+	int i, j;
+	for (i = 1; i <= 10; i++)
 	{
-		for (number = 0; number <= 14; number++)
+		for (j = 0; j <= 14; j++)
 		{
-			tens = number / 10;
-			units = number % 10;
-			if (number > 9)
-				_putchar(tens + '0');
-
-			_putchar(units + '0');
+			if (j >= 10)
+			putchar('1');
+			putchar(j % 10 + '0');
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
