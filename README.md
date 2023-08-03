@@ -1,1 +1,1 @@
-variadic functions
+bitwise in C
